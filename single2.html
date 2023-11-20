@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Safni Usman T</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets1/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		
+
+				
+
+				
+
+						
+
+					
+
+					
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>Socket-based data transfer Server</h2>
+										
+									</div>
+									
+								</header>
+								<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+								<p><strong>Project Overview:</strong> This project focuses on the development of a socket-based server application, named aesdsocket, capable of receiving data packets, appending them to a file, and responding to client requests. The server operates as a daemon and supports cross-compilation, enhancing its versatility for embedded systems. Additionally, the implementation ensures robust error handling, graceful exits, and seamless integration with system signals.
+								</p>
+
+<p><strong>GitHub Link to the project:</strong> <a href="https://github.com/cu-ecen-aeld/assignment-3-and-later-SafniUsman/tree/master/server">Socket Server</a> </p>
+
+<p><strong>Key Steps and Components:</strong></br>
+
+<strong>1.	Directory Modification:</strong></br>
+•	Extended the existing assignments-3-and-later repository by adding a new directory named "server."</br>
+<strong>2.	Socket Server Implementation:</strong></br>
+•	Created a Makefile in the "server" directory, enabling compilation through the "all" and "default" targets.</br>
+•	Developed the aesdsocket program, a socket-based server, supporting cross-compilation and producing an executable in the "server" directory.</br>
+<strong>3.	Socket Operations:</strong></br>
+•	Established a stream socket bound to port 9000.</br>
+•	Listened for and accepted connections from clients.</br>
+•	Logged connection information, including the client's IP address, to the system syslog.</br>
+<strong>4.	Data Handling:</strong></br>
+•	Received data packets over the connection, delimited by newline characters.</br>
+•	Appended received data to the file /var/tmp/aesdsocketdata, creating the file if it does not exist.</br>
+•	Handled potential errors related to malloc() for packet handling.</br>
+<strong>5.	Response to Clients:</strong></br>
+•	Returned the full content of /var/tmp/aesdsocketdata to the client as soon as a data packet completed.</br>
+<strong>6.	Graceful Shutdown:</strong></br>
+•	Logged closure information, including the client's IP address, to the system syslog.</br>
+•	Implemented a loop for continuously accepting connections until a SIGINT or SIGTERM signal is received.</br>
+<strong>7.	Signal Handling:</strong></br>
+•	Gracefully exited the application upon receiving SIGINT or SIGTERM signals.</br>
+•	Completed open connection operations, closed sockets, and deleted the file /var/tmp/aesdsocketdata.</br>
+•	Logged a message to the system syslog indicating the reception of a signal: "Caught signal, exiting."</br>
+<strong>8.	Daemon Mode:</strong></br>
+•	Enhanced the application to support a -d argument, enabling it to run as a daemon.</br>
+•	Forked the process after ensuring successful binding to port 9000 in daemon mode.</br>
+<strong>9.	Integration Testing:</strong></br>
+•	Installed the netcat utility on the development system for testing purposes.</br>
+•	Utilized the sockettest.sh script to validate the functionality of the server, ensuring successful completion after restarting the application.</br>
+<strong>10.	Full Test Automation:</strong></br>
+•	Modified the program to support daemon mode for comprehensive testing.</br>
+•	Integrated the ./full-test.sh script from the aesd-assignments repository to automate the verification process.</br>
+
+</p>
+<p><strong>Technologies:</strong></br>
+•	C Programming</br>
+•	Socket Programming</br>
+•	Makefile</br>
+•	Signal Handling</br>
+•	System Logging (syslog)</br>
+•	Daemon Processes</br>
+•	Integration Testing (netcat)</br>
+
+
+</p>
+<p><strong>Skills Showcased:</strong></br>
+•	Embedded Systems Development</br>
+•	Socket Communication</br>
+•	Error Handling and Logging</br>
+•	Process Forking</br>
+•	Signal Handling</br>
+•	Integration Testing</br>
+
+
+</p>
+
+								
+								
+								<p><strong>Project Outcome:</strong> The aesdsocket server stands as a robust, cross-compiled application capable of efficiently handling data packets, serving clients, and gracefully responding to system signals. Its flexibility in both standalone and daemon modes makes it suitable for diverse embedded systems, and the comprehensive testing approach ensures reliability and functionality. This project showcases proficiency in low-level programming and system-level development.
+								</p>
+								
+							</article>
+
+					</div>
+
+				
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets1/js/jquery.min.js"></script>
+			<script src="assets1/js/browser.min.js"></script>
+			<script src="assets1/js/breakpoints.min.js"></script>
+			<script src="assets1/js/util.js"></script>
+			<script src="assets1/js/main.js"></script>
+
+	</body>
+</html>

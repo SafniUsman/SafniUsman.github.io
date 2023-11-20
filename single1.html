@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Safni Usman T</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets1/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		
+
+				
+
+				
+
+						
+
+					
+
+					
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>Buildroot Integration and Customization</h2>
+										
+									</div>
+									
+								</header>
+								<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+								<p><strong>Project Overview:</strong> This project involves integrating and customizing Buildroot, a popular embedded Linux build system, for creating a tailored system image. The primary goal is to automate the process of building a customized Linux system with specific packages and configurations, ensuring efficiency, consistency, and reproducibility.
+
+</p>
+
+<p><strong>GitHub Link to the project:</strong> <a href="https://github.com/cu-ecen-aeld/assignment-4-SafniUsman">Buildroot Integration</a></p>
+
+<p><strong>Key Steps and Components:</strong></br>
+
+<strong>1.	Buildroot Submodule Integration:</strong></br>
+•	Added Buildroot as a git submodule from the official repository (branch 2022.02.x) to the project structure.</br>
+•	Ensured proper commit hash management for Buildroot to maintain a specific version.</br>
+<strong>2.	Package Integration:</strong></br>
+•	Incorporated mandatory packages as per Buildroot documentation.</br>
+•	Developed a custom package, aesd-assignments, that builds applications based on the code from Assignment 3 and later. This package includes a tester script, cross-compiled applications, and dependencies.</br>
+•	Implemented package configurations in Config.in, external.mk, and external.desc files.</br>
+<strong>3.	Configuration Management:</strong></br>
+•	Configured Buildroot using qemu_aarch64_virt_defconfig.</br>
+•	Utilized save-config.sh to save project-specific configurations, ensuring consistency.</br>
+<strong>4.	Build Process:</strong></br>
+•	Executed the Buildroot build process using ./build.sh, emphasizing the importance of initial and subsequent builds.</br>
+•	Applied suggested speedup techniques to enhance build efficiency.</br>
+<strong>5.	QEMU Image Execution:</strong></br>
+•	Deployed the generated QEMU image using runqemu.sh script, facilitating efficient testing and validation.</br>
+<strong>6.	System Enhancement:</strong></br>
+•	Added the Dropbear package to the image to support SSH for secure communication.</br>
+•	Configured default root password and SSH access for enhanced system security.</br>
+<strong>7.	Verification and Testing:</strong></br>
+•	Validated the system by logging in via SSH, ensuring successful integration and functionality.</br>
+•	Utilized SCP to transfer essential files from the QEMU instance to the assignment repository.</br>
+<strong>8.	Clean-Up Script:</strong></br>
+•	Implemented a clean-up script (clean.sh) to reset the Buildroot environment for future developments.</br>
+
+</p>
+<p><strong>Technologies:</strong></br>
+•	Buildroot</br>
+•	Git Submodules</br>
+•	QEMU</br>
+•	Dropbear (SSH)</br>
+
+
+</p>
+<p><strong>Skills Showcased:</strong></br>
+•	Embedded Linux Development</br>
+•	Build System Configuration</br>
+•	Version Control (Git)</br>
+•	Scripting (Bash)</br>
+•	Package Management</br>
+
+
+</p>
+
+								
+								
+								<p><strong>Project Outcome:</strong> This project results in a streamlined, customized Linux system image tailored for specific applications. The integration of Buildroot as a submodule ensures version control and ease of collaboration.
+								</p>
+								
+							</article>
+
+					</div>
+
+				
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets1/js/jquery.min.js"></script>
+			<script src="assets1/js/browser.min.js"></script>
+			<script src="assets1/js/breakpoints.min.js"></script>
+			<script src="assets1/js/util.js"></script>
+			<script src="assets1/js/main.js"></script>
+
+	</body>
+</html>
