@@ -47,19 +47,19 @@
 
 <strong>1.	Script Overview:</strong></br>
 •	The core component is the BASH script "manual-linux.sh."</br>
-•	Takes an argument (outdir) for specifying the output location.</br>
+•	Took an argument (outdir) for specifying the output location.</br>
 <strong>2.	Directory Creation:</strong></br>
-•	Checks and creates the specified outdir directory, failing gracefully if unable to create.</br>
+•	Checked and created the specified outdir directory, failing gracefully if unable to create.</br>
 <strong>3.	Kernel Image Building:</strong></br>
-•	Fetches Linux kernel source code from the official repository.</br>
-•	Utilizes an ARM cross-compile toolchain for kernel compilation.</br>
+•	Fetched Linux kernel source code from the official repository.</br>
+•	Utilized an ARM cross-compile toolchain for kernel compilation.</br>
 <strong>4.	Copying Resulting Files:</strong></br>
-•	Copies the kernel image and related files to the specified outdir.</br>
+•	Copied the kernel image and related files to the specified outdir.</br>
 •	Key output files: outdir/Image (kernel image) and outdir/initramfs.cpio.gz (root filesystem).</br>
 <strong>5.	Root Filesystem Building:</strong></br>
-•	Constructs a root filesystem in outdir/rootfs based on a configurable staging directory tree.</br>
+•	Constructed a root filesystem in outdir/rootfs based on a configurable staging directory tree.</br>
 <strong>6.	Testing with QEMU:</strong></br>
-•	Utilizes QEMU for testing the generated kernel and root filesystem in a virtualized environment.</br>
+•	Utilized QEMU for testing the generated kernel and root filesystem in a virtualized environment.</br>
 </p>
 <p><strong>Technologies:</strong></br>
 •	ARM Cross-Compile Toolchain</br>
